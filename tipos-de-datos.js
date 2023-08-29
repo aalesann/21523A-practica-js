@@ -82,10 +82,17 @@ const JohnDoe = {
         ciudad: "New York",
         calle: "Edificio Principal"
     },
-    correr: function(){
-        console.log('Estoy corriendo')
+    correr: function(kms = 0){
+        console.log('Estoy corriendo ' + kms + 'kms')
+    },
+    decirNombre: function(){
+        console.log(`Mi nombre completo es ${this.nombre} ${this.apellido}`)
     }
 }
+
+JohnDoe.correr(10)
+JohnDoe.decirNombre()
+
 
 // const JohnWick = JohnDoe;
 
@@ -93,14 +100,15 @@ const JohnDoe = {
 // const JohnWick = Object.assign({}, JohnDoe);
 
 // ! Solución 2
-const JohnWick = JSON.parse(JSON.stringify(JohnDoe))
+// const JohnWick = JSON.parse(JSON.stringify(JohnDoe))
+// JohnWick.nombre = "Johnatan"
+// JohnWick.domicilio.pais = "Mexico"
+// console.log(JohnDoe.domicilio)
+// console.log(JohnWick.domicilio)
 
 
-JohnWick.nombre = "Johnatan"
-JohnWick.domicilio.pais = "Mexico"
 
-console.log(JohnDoe.domicilio)
-console.log(JohnWick.domicilio)
+
 
 
 

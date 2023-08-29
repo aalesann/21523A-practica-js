@@ -71,8 +71,36 @@
 // console.log(valor)
 
 
+// ! MANIPULACIÓN DE OBJETOS
+const JohnDoe = {
+    nombre: "John",
+    apellido: "Doe",
+    edad: "23",
+    dni: 34345222,
+    domicilio: {
+        pais: "EEUU",
+        ciudad: "New York",
+        calle: "Edificio Principal"
+    },
+    correr: function(){
+        console.log('Estoy corriendo')
+    }
+}
+
+// const JohnWick = JohnDoe;
+
+// ! Solución 1
+// const JohnWick = Object.assign({}, JohnDoe);
+
+// ! Solución 2
+const JohnWick = JSON.parse(JSON.stringify(JohnDoe))
 
 
+JohnWick.nombre = "Johnatan"
+JohnWick.domicilio.pais = "Mexico"
+
+console.log(JohnDoe.domicilio)
+console.log(JohnWick.domicilio)
 
 
 

@@ -174,25 +174,25 @@
 //     console.log('No es Cierto')
 // }
 
-let dia = 6;
-(dia === 1)
-    ? console.log('Lunes')
-    : (dia === 2)
-        ? console.log('Martes')
-        : (dia === 3)
-            ? console.log('Miercoles')
-            : (dia === 4)
-                ? console.log('Jueves')
-                : (dia === 5)
-                    ? console.log('Viernes')
-                    : (dia === 6)
-                        ? console.log('Sábado')
-                        : (dia === 7)
-                            ? console.log('Domingo')
-                            : console.log('El valor ingresado no es correcto')
+// let dia = 6;
+// (dia === 1)
+//     ? console.log('Lunes')
+//     : (dia === 2)
+//         ? console.log('Martes')
+//         : (dia === 3)
+//             ? console.log('Miercoles')
+//             : (dia === 4)
+//                 ? console.log('Jueves')
+//                 : (dia === 5)
+//                     ? console.log('Viernes')
+//                     : (dia === 6)
+//                         ? console.log('Sábado')
+//                         : (dia === 7)
+//                             ? console.log('Domingo')
+//                             : console.log('El valor ingresado no es correcto')
 
-                            console.log(dia)
-                            console.log('Fin del programa')
+//                             console.log(dia)
+//                             console.log('Fin del programa')
 
 // ! DEPURACIÓN Y BREAKPOINTS
 
